@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./assets/vendor/booststrap/bootstrap.min.css";
+@import "./assets/vendor/booststrap/bootstrap-icons.min.css";
+
+body {
+  background-color: rgba(0, 0, 0, 0.1);
+}

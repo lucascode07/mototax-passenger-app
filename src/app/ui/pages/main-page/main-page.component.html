@@ -1,0 +1,18 @@
+<mototax-header />
+
+<main class="main-mototax px-3">
+  <mototax-search-box (licensePlate)="consultPilot($event)" />
+  <mototax-pilot-preview *ngIf="pilotInfo" [vehicleInfo]="pilotInfo" />
+
+  <mototax-search-message [message]="firstMessage.text" [icon]="firstMessage.icon" [status]="firstMessage.status"
+    *ngIf="isFirstSearch" />
+
+  <mototax-search-message [message]="notFoundMessage.text" [icon]="notFoundMessage.icon"
+    [status]="notFoundMessage.status" *ngIf="notFoundPilot" />
+
+  <div *ngIf="isLoading" class="text-center pt-5">
+    <div class="spinner-border mt-5" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+</main>

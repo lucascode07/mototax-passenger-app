@@ -1,0 +1,93 @@
+<section class="pilot-preview pt-4">
+  <div
+    class="dropdown-menu position-static d-flex flex-column flex-lg-row align-items-stretch justify-content-start p-4 rounded-3 shadow-lg border-0">
+
+    <div class="col-lg-auto">
+      <div class="img-thumbnail">
+        <img [src]="vehiclePhoto" alt="Foto del vehículo" class="img-fluid" />
+      </div>
+    </div>
+
+    <hr class="d-lg-none mt-4">
+
+    <div class="col-lg-8">
+      <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+        <li>
+          <a href="#" class="btn btn-hover-light rounded-2 d-flex align-items-start gap-3 py-2 px-3 lh-sm text-start">
+            <i class="bi bi-taxi-front fs-2"></i>
+            <div>
+              <strong class="d-block">Placa del vehículo</strong>
+              <small>{{ vehicleInfo.vehicles.data[0].attributes.licensePlate }}</small>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="btn btn-hover-light rounded-2 d-flex align-items-start gap-3 py-2 px-3 lh-sm text-start">
+            <i class="bi bi-tools fs-2"></i>
+            <div>
+              <strong class="d-block">Año de fabricación</strong>
+              <small>{{ vehicleInfo.vehicles.data[0].attributes.year }}</small>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="btn btn-hover-light rounded-2 d-flex align-items-start gap-3 py-2 px-3 lh-sm text-start">
+            <i class="bi bi-folder fs-2"></i>
+            <div>
+              <strong class="d-block mb-2">Papeles</strong>
+              <span class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill">
+                Todo al día
+              </span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div
+    class="mt-4 dropdown-menu position-static d-flex flex-column flex-lg-row align-items-stretch justify-content-start p-4 rounded-3 shadow-lg border-0">
+
+    <div class="col-lg-auto">
+      <div class="img-thumbnail">
+        <img [src]="pilotPhoto" alt="Foto del propietario" class="img-fluid" />
+      </div>
+    </div>
+
+    <hr class="d-lg-none mt-4">
+
+    <div class="col-lg-8">
+      <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+        <li>
+          <a href="#" class="btn btn-hover-light rounded-2 d-flex align-items-start gap-3 py-2 px-3 lh-sm text-start">
+            <i class="bi bi-person-circle fs-2"></i>
+            <div>
+              <strong class="d-block">Propietario</strong>
+              <small>{{ vehicleInfo.name }} {{ vehicleInfo.lastname }}</small>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="btn btn-hover-light rounded-2 d-flex align-items-start gap-3 py-2 px-3 lh-sm text-start">
+            <i class="bi bi-postcard fs-2"></i>
+            <div>
+              <strong class="d-block">Número de licencia</strong>
+              <small>{{ vehicleInfo.driverLicense.data.attributes.licenseNumber }}</small>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="btn btn-hover-light rounded-2 d-flex align-items-start gap-3 py-2 px-3 lh-sm text-start">
+            <i class="bi bi-clipboard2-check fs-2"></i>
+            <div>
+              <strong class="d-block mb-2">Estado</strong>
+              <span class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill">
+                Activo
+              </span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,9 @@
+header {
+  &.custom-shadow-top {
+    box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+      0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+  }
+  h1 {
+    font-size: 1.75rem;
+  }
+}

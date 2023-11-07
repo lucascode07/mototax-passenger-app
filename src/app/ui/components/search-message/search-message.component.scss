@@ -1,0 +1,9 @@
+.search-message {
+  display: grid;
+  place-content: center;
+  height: calc(100vh - 137.59px);
+
+  .message-icon {
+    font-size: 6rem;
+  }
+}

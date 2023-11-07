@@ -1,0 +1,8 @@
+<form [formGroup]="searchForm" (ngSubmit)="sendLicensePlate()" autocomplete="off"
+  class="fixed-bottom p-3 border-top border-secondary-subtle bg-light custom-shadow-bottom">
+  <div class="input-group">
+    <input type="text" class="form-control text-uppercase" placeholder="Ingrese la placa del vehículo"
+      aria-label="Ingrese la placa del vehículo" aria-describedby="button-search" formControlName="licensePlate">
+    <button class="btn btn-warning" type="submit" id="button-search">Buscar</button>
+  </div>
+</form>
