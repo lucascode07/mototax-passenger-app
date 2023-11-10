@@ -11,7 +11,7 @@ export class PilotService implements PilotGateway {
   constructor(private _http: HttpClient) {}
 
   public consultPilotByPlate(licensePlate: string): Observable<Pilot | null> {
-    const queryURL = `/api/pilots?populate[profilePhoto][populate]=*&populate[driverLicense][populate]=*&populate[vehicles][populate]=*&filters[vehicles][licensePlate][$eq]=${licensePlate}&filters[available][$eq]=true`;
+    const queryURL = `/api/pilots?populate[fotoPerfil][populate]=*&populate[licencia][populate]=*&populate[vehiculos][populate]=*&filters[vehiculos][placa][$eq]=${licensePlate}&filters[habilitado][$eq]=true`;
     return this._http
       .get<PilotResponse>(`${environment.MOTOTAX_API_URL}${queryURL}`)
       .pipe(

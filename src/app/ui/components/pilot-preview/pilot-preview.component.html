@@ -17,7 +17,7 @@
             <i class="bi bi-taxi-front fs-2"></i>
             <div>
               <strong class="d-block">Placa del vehículo</strong>
-              <small>{{ vehicleInfo.vehicles.data[0].attributes.licensePlate }}</small>
+              <small>{{ vehicleInfo.vehiculos.data[0].attributes.placa }}</small>
             </div>
           </a>
         </li>
@@ -26,7 +26,7 @@
             <i class="bi bi-tools fs-2"></i>
             <div>
               <strong class="d-block">Año de fabricación</strong>
-              <small>{{ vehicleInfo.vehicles.data[0].attributes.year }}</small>
+              <small>{{ vehicleInfo.vehiculos.data[0].attributes.anioFabricacion }}</small>
             </div>
           </a>
         </li>
@@ -63,7 +63,7 @@
             <i class="bi bi-person-circle fs-2"></i>
             <div>
               <strong class="d-block">Propietario</strong>
-              <small>{{ vehicleInfo.name }} {{ vehicleInfo.lastname }}</small>
+              <small>{{ vehicleInfo.nombres }} {{ vehicleInfo.apellidos }}</small>
             </div>
           </a>
         </li>
@@ -72,7 +72,7 @@
             <i class="bi bi-postcard fs-2"></i>
             <div>
               <strong class="d-block">Número de licencia</strong>
-              <small>{{ vehicleInfo.driverLicense.data.attributes.licenseNumber }}</small>
+              <small>{{ vehicleInfo.licencia.data.attributes.numeroLicencia }}</small>
             </div>
           </a>
         </li>

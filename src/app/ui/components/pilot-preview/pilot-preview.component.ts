@@ -10,11 +10,11 @@ export class PilotPreviewComponent {
   @Input() vehicleInfo!: Pilot;
 
   public get vehiclePhoto(): string {
-    return this.vehicleInfo.vehicles.data[0].attributes.photo.data.attributes
+    return this.vehicleInfo.vehiculos.data[0].attributes.foto.data.attributes
       .url;
   }
 
   public get pilotPhoto(): string {
-    return this.vehicleInfo.profilePhoto.data.attributes.url;
+    return this.vehicleInfo.fotoPerfil.data.attributes.url
   }
 }
