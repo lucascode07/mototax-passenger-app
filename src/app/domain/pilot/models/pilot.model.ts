@@ -28,6 +28,7 @@ export interface DriverLicense {
   fechaVencimiento: string;
   fotoFrontal: PictureBody;
   fotoPosterior: PictureBody;
+  antecedentePolicial: PictureBody;
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
