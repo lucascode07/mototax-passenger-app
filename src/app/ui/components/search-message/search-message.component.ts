@@ -9,4 +9,5 @@ export class SearchMessageComponent {
   @Input() public message: string = '';
   @Input() public icon: string = '';
   @Input() public status: string = '';
+  @Input() public isFirstMsg?: boolean;
 }

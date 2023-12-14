@@ -4,7 +4,7 @@
   <mototax-search-box (licensePlate)="consultPilot($event)" />
   <mototax-pilot-preview *ngIf="pilotInfo" [vehicleInfo]="pilotInfo" />
 
-  <mototax-search-message [message]="firstMessage.text" [icon]="firstMessage.icon" [status]="firstMessage.status"
+  <mototax-search-message [message]="firstMessage.text" [icon]="firstMessage.icon" [status]="firstMessage.status" [isFirstMsg]="true"
     *ngIf="isFirstSearch" />
 
   <mototax-search-message [message]="notFoundMessage.text" [icon]="notFoundMessage.icon"

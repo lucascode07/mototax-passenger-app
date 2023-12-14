@@ -1,4 +1,9 @@
 <div class="search-message">
   <i class="message-icon text-{{status}} text-center bi {{ icon }}"></i>
   <p class="px-3 text-center fs-5 text-body-tertiary mb-0">{{ message }}</p>
+  <a class="btn btn-info mt-4 w-50 mx-auto text-white"
+    href="https://docs.google.com/forms/d/e/1FAIpQLSdAFh6lcR2C8CJS3Pxh6e11zlEeRX7yFSUJzgS_5yNw_KI4ug/viewform?usp=sf_link"
+    target="_blank" *ngIf="isFirstMsg">
+    Encuesta
+  </a>
 </div>
